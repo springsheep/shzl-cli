@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #progress{
+            height:10px;
+            width:100%;
+            border: 1px solid gold;
+            position: relative;
+            border-radius: 5px;
+        }
+        #progress .progress-item{
+            height:100%;
+            position: absolute;
+            left:0;
+            top:0;
+            background: chartreuse;
+            border-radius: 5px;
+            transition: width .3s linear;
+        }
+    </style>
+</head>
+<body>
+文件上传框<br>
+<input type="file" id="file"><br>
+显示进度条<br>
+<div id="progress">
+    <div class="progress-item"></div>
+</div>
+上传成功后的返回内容<br>
+<span id="callback"></span>
+</body>
+<script>
+    //首先监听input框的变动，选中一个新的文件会触发change事件
+    document.querySelector("#file").addEventListener("change",function () {
+        //获取到选中的文件
+        var file = document.querySelector("#file").files[0];
+        //创建formdata对象
+        var formdata = new FormData();
+        formdata.append("file",file);
+        //创建xhr，使用ajax进行文件上传
+        var xhr = new XMLHttpRequest();
+        xhr.open("post","https://cg-qc.smarthohhot.com:1443/cityai/common/upload");
+        //回调
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState==4 && xhr.status==200){
+                document.querySelector("#callback").innerText = xhr.responseText;
+            }
+        }
+        //获取上传的进度
+        xhr.upload.onprogress = function (event) {
+            if(event.lengthComputable){
+                var percent = event.loaded/event.total *100;
+                document.querySelector("#progress .progress-item").style.width = percent+"%";
+            }
+        }
+        //将formdata上传
+        xhr.send(formdata);
+    });
+</script>
+</html>

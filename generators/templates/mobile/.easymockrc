@@ -1,0 +1,11 @@
+{
+  "host": " http://10.12.107.126:7300",
+  "output": "src/api",
+  "template": "./easy-mock-template/hump-axios/",
+  "projects": [
+    {
+      "id": "607cdf8527548100340ac66e",
+      "name": "ad-api"
+    }
+  ]
+}

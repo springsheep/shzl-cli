@@ -1,0 +1,11 @@
+{
+  "host": "http://10.10.70.177:7300/",
+  "output": "src/api",
+  "template": "./easy-mock-template/hump-axios/",
+  "projects": [
+    {
+      "id": "61076881d707f40037919126",
+      "name": "enforce-api"
+    }
+  ]
+}

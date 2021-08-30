@@ -1,0 +1,141 @@
+/* 主题颜色定义 */
+$app-color-primary: #2c90fe;
+$app-color-vice: #78b8ff;
+$app-color-red: #ff7878;
+$app-color-white: #ffffff;
+$app-color-black: #333333;
+
+// 主题色
+.primary-bg-color-with-avtive {
+	background-color: $app-color-primary;
+
+	&:active {
+		background-color: $app-color-primary;
+		opacity: 80%;
+	}
+}
+
+.primary-bg-color {
+	background-color: $app-color-primary;
+}
+
+.primary-color {
+	color: $app-color-primary;
+}
+
+.primary-border-color {
+	border-color: $app-color-primary;
+}
+
+// 渐变主题背景色带点击效果
+.primary-gradient-bg-color-with-active {
+	background-image: linear-gradient(90deg, $app-color-vice, $app-color-primary);
+
+	&:active {
+		opacity: 80%;
+	}
+}
+
+// 渐变主题背景色
+.primary-gradient-bg-color {
+	background-image: linear-gradient(90deg, $app-color-vice, $app-color-primary);
+}
+
+// 渐变的主题色边框
+.primary-gradient-border {
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: -1px;
+		bottom: -1px;
+		left: -1px;
+		right: -1px;
+		z-index: -1;
+		background-image: linear-gradient(90deg, $app-color-vice, $app-color-primary);
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		background-color: #ffffff;
+		border-radius: $uni-border-radius-base;
+	}
+}
+
+// 辅助色
+.vice-bg-color-with-avtive {
+	background-color: $app-color-vice;
+
+	&:active {
+		background-color: $app-color-vice;
+		opacity: 80%;
+	}
+}
+
+.vice-bg-color {
+	background-color: $app-color-vice;
+}
+
+.vice-color {
+	color: $app-color-vice;
+}
+
+// 红色
+.red-bg-color-with-avtive {
+	background-color: $app-color-red;
+	&:active {
+		background-color: $app-color-red;
+		opacity: 80%;
+	}
+}
+
+.red-bg-color {
+	background-color: $app-color-red;
+}
+
+.red-color {
+	color: $app-color-red;
+}
+
+.red-border-color {
+	border-color: $app-color-red;
+}
+
+// 白色
+.white-bg-color-with-active {
+	background-color: $app-color-white;
+	&:active {
+		background-color: #eeeeee;
+	}
+}
+.white-color {
+	color: $app-color-white;
+}
+
+.white-bg-color {
+	background-color: $app-color-white;
+}
+
+// 黑色
+.black-bg-color-with-avtive {
+	background-color: $app-color-black;
+	&:active {
+		background-color: $app-color-black;
+		opacity: 80%;
+	}
+}
+
+.black-color {
+	color: $app-color-black;
+}
+
+.black-bg-color {
+	background-color: $app-color-black;
+}

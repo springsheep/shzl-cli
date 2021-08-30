@@ -1,0 +1,23 @@
+<!--
+ * @Descripttion: your project
+ * @version: 1.0
+ * @Author: 张鹏
+ * @Date: 1985-10-26 16:15:00
+ * @LastEditors: 张鹏
+ * @LastEditTime: 2021-08-30 11:38:24
+-->
+
+# 基于 yeoman-generator 脚手架的社会治理前端项目初始化工具，
+
+## 目前支持平台项目
+
+-  antvue pc 端 antvue 项目脚手架
+-  pc 端项目脚手架
+-  移动端 h5 项目脚手架
+-  小程序项目脚手架
+-  基于 rollup 的 lib 库脚手架
+
+## 运行步骤：
+
+-  1、全局安装`@cm/shzl-cli`
+-  2、运行 `shzl-cli` 输入根据提示初始化项目

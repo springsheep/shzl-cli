@@ -1,0 +1,45 @@
+/* 改变主题色变量 */
+$--color-primary: #409eff;
+$--color-white: #ffffff;
+$--color-black: #000 !default;
+
+$--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* #ef9d4d */
+$--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* #f1a861 */
+$--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* #f2b374 */
+$--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default; /* #f4be88 */
+$--color-primary-light-5: mix($--color-white, $--color-primary, 50%) !default; /* #f6c99c */
+$--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default; /* #f8d3b0 */
+$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /* #fadec4 */
+$--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* #fbe9d7 */
+$--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* #fdf4eb */
+
+$--color-primary-dark-1: mix($--color-black, $--color-primary, 10%) !default; /* #3a8ee6 */
+$--color-primary-dark-2: mix($--color-black, $--color-primary, 20%) !default; /* #337ecc */
+$--color-primary-dark-3: mix($--color-black, $--color-primary, 30%) !default; /* #2d6fb3 */
+$--color-primary-dark-4: mix($--color-black, $--color-primary, 40%) !default; /* #265f99 */
+$--color-primary-dark-5: mix($--color-black, $--color-primary, 50%) !default; /* #204f80 */
+$--color-primary-dark-6: mix($--color-black, $--color-primary, 60%) !default; /* #1a3f66 */
+$--color-primary-dark-7: mix($--color-black, $--color-primary, 70%) !default; /* #132f4d */
+$--color-primary-dark-8: mix($--color-black, $--color-primary, 80%) !default; /* #0d2033 */
+$--color-primary-dark-9: mix($--color-black, $--color-primary, 90%) !default; /* #06101a */
+
+
+// $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
+// $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
+// $--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
+// $--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default; /* 8cc5ff */
+// $--color-primary-light-5: mix($--color-white, $--color-primary, 50%) !default; /* a0cfff */
+// $--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default; /* b3d8ff */
+// $--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /* c6e2ff */
+// $--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
+// $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~@cci/cui/lib/theme-default/fonts';
+
+/* Table
+// -----------------------------*/
+// $--table-header-color: rgba(0,0,0,0.96);
+// $--table-header-background:#f3f6f9;
+
+// $--tagsview-background-active-color: #3eba8d;

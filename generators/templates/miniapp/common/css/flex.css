@@ -1,0 +1,72 @@
+/* 子元素-平均分栏 */
+.flex1 {
+	flex: 1;
+}
+
+/* 父元素-横向排列（主轴） */
+.flex-h {
+	display: flex;
+	flex-direction: row;
+}
+
+/* 父元素-横向排列（主轴）（从右到左） */
+.flex-hr {
+	flex-direction: row-reverse;
+}
+
+/* 父元素-水平向行开始位置对齐（主轴是横向才生效） */
+.flex-hs {
+	justify-content: flex-start;
+}
+
+/* 父元素-水平居中（主轴是横向才生效） */
+.flex-hc {
+	justify-content: center;
+}
+
+/* 父元素-水平向行结束位置对齐（主轴是横向才生效） */
+.flex-he {
+	justify-content: flex-end;
+}
+
+/* 父元素-水平向两端对齐（主轴是横向才生效） */
+.flex-hsb {
+	justify-content: space-between;
+}
+
+/* 父元素-纵向排列（主轴） */
+.flex-v {
+	display: flex;
+	flex-direction: column;
+}
+
+/* 父元素-竖直向行起始位置对齐（主轴是横向才生效） */
+.flex-vs {
+	align-items: flex-start;
+}
+
+/* 父元素-竖直居中（主轴是横向才生效） */
+.flex-vc {
+	align-items: center;
+}
+
+/* 父元素-竖直向行起始位置对齐（主轴是横向才生效） */
+.flex-ve {
+	align-items: flex-end;
+}
+
+.flex-vb {
+	align-items: baseline;
+}
+
+/* 父元素-横向和纵向换行 */
+.flex-hw,
+.flex-vw {
+	flex-wrap: wrap;
+	font-size: 0;
+}
+
+.flex-hw>*,
+.flex-vw>* {
+	display: inline-block;
+}

@@ -1,0 +1,286 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #10344d;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+
+/* 初始化 */
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  font-family: 'Microsoft Yahei', '微软雅黑', '宋体', arial, 'Hiragino Sans GB', Tahoma, Arial, Helvetica;
+}
+
+
+/*字号、字体*/
+
+button,
+input,
+select,
+textarea {
+  outline: none;
+  font-family: 'Microsoft Yahei', '微软雅黑', '宋体', arial, 'Hiragino Sans GB', Tahoma, Arial, Helvetica;
+}
+
+
+/*下划线*/
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+
+/*鼠标悬停显示下划线*/
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/* 取消链接高亮  */
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* 设置HTML5元素为块 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+///* 图片自适应 */
+//img { width: 100%; height: 100%; width: auto\9; /* ie8 */ -ms-interpolation-mode: bicubic;/*为了照顾ie图片缩放失真*/ border: 0; display: block; outline: none; }
+
+/*清除倾斜*/
+
+em,
+i {
+  display: inline-block;
+  font-style: normal;
+}
+
+
+/*清除自带的符号*/
+
+ul,
+ol,
+li,
+dl,
+dd,
+dt {
+  list-style: none;
+}
+
+
+/*让子元素继承父元素的字号、不加粗*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+
+/*form表单的标题颜色为黑色*/
+
+legend {
+  color: #111;
+}
+
+
+/*清除img标签被a标签包含的时候出现蓝色的边框*/
+
+fieldset,
+img {
+  border: 0;
+}
+
+
+/*鼠标移上显示手形*/
+
+label,
+button {
+  cursor: pointer;
+}
+
+
+/*清除浮动*/
+
+.clearfix {
+  zoom: 1;
+
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+/*连续英文、数字换行*/
+
+.wordwrap {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+
+/*单行文字超出显示省略号*/
+
+.omg {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+span {
+  display: inline-block;
+}
+
+
+/*共用隐藏*/
+
+.hide {
+  display: none;
+}
+
+
+/*防止vue代码直接显示*/
+
+[v-cloak] {
+  display: none;
+}
+
+// 边距
+@for $i from 5 through 50 {
+  .ml#{$i} {
+    margin-left: 0px + $i
+  }
+  .mr#{$i} {
+    margin-right: 0px + $i
+  }
+}
+
+// 浮动
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}

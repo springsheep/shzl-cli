@@ -1,0 +1,11 @@
+{
+  "host": "http://10.10.71.187:7300",
+  "output": "api",
+  "template": "./easy-mock-template/hump-axios/",
+  "projects": [
+	{
+	  "id": "60a2083a74d4780037fda463",
+	  "name": "store-api"
+	}
+  ]
+}

@@ -1,0 +1,31 @@
+/* 文字限制 */
+@mixin text-limit-line($lineNum) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	display: -webkit-box; //作为弹性伸缩盒子模型显示。
+	-webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+	-webkit-line-clamp: $lineNum; //显示的行
+}
+
+/* 文字限制1行 */
+.text-limit-one {
+	@include text-limit-line(1);
+}
+
+/* 文字限制2行 */
+.text-limit-two {
+	@include text-limit-line(2);
+}
+
+/* 文字限制3行 */
+.text-limit-three {
+	@include text-limit-line(3);
+}
+
+.tab1 .select-text {
+	border: 2rpx solid #dcdfe6;
+	border-radius: 8rpx;
+	padding: 0 20rpx;
+	color: #999;
+}

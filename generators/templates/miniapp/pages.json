@@ -1,0 +1,87 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+			"^cm-(.*)": "@/components/cm-ui/cm-$1/cm-$1.vue"
+		}
+	},
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// 组件演示
+		
+		{
+			"path": "pages/example/example",
+			"name": "example",
+			"style": {
+				"navigationBarTitleText": "示例",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/subpage-examples/list/list",
+			"name": "example-list",
+			"style": {
+				"navigationBarTitleText": "列表",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/subpage-examples/pull-to-refresh/pull-to-refresh",
+			"name": "example-pull-to-refresh",
+			"style": {
+				"navigationBarTitleText": "下拉刷新",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/subpage-examples/cm-map/cm-map",
+			"name": "example-map",
+			"style": {
+				"navigationBarTitleText": "地图",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/subpage-examples/cm-search-map/cm-search-map",
+			"name": "example-search-map",
+			"style": {
+				"navigationBarTitleText": "带搜索的地图",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/subpage-examples/form/form",
+			"name": "example-form",
+			"style": {
+				"navigationBarTitleText": "表单"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#0482FF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"list": [
+			{
+				"pagePath": "pages/example/example",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/home_fill.png",
+				"text": "示例"
+			}
+		]
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序位置接口的效果展示"
+		}
+	}
+}
