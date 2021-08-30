@@ -4,7 +4,7 @@
  * @Author: 张鹏
  * @Date: 1985-10-26 16:15:00
  * @LastEditors: 张鹏
- * @LastEditTime: 2021-08-30 11:38:24
+ * @LastEditTime: 2021-08-30 16:39:46
 -->
 
 # 基于 yeoman-generator 脚手架的社会治理前端项目初始化工具，
@@ -19,5 +19,8 @@
 
 ## 运行步骤：
 
--  1、全局安装`@cm/shzl-cli`
+外网安装 shzl-cli
+内网安装 @shzl/shzl-cli
+
+-  1、全局安装`@shzl/shzl-cli`
 -  2、运行 `shzl-cli` 输入根据提示初始化项目
