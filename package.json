@@ -1,6 +1,6 @@
 {
    "name": "shzl-cli",
-   "version": "1.2.1",
+   "version": "0.0.1",
    "description": " SHZL Cli",
    "main": "lib/index.js",
    "bin": {
