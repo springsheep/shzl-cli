@@ -1,42 +1,43 @@
 {
-   "name": "shzl-cli",
-   "version": "0.1.5",
-   "description": " SHZL Cli",
-   "main": "lib/index.js",
-   "bin": {
-      "shzl-cli": "./lib/index.js"
-   },
-   "scripts": {
-      "dev": "tsc --watch",
-      "commit": "git-cz",
-      "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
-   },
-   "author": "张鹏",
-   "license": "MIT",
-   "files": [
-      "lib",
-      "generators"
-   ],
-   "devDependencies": {
-      "@types/fs-extra": "^8.1.0",
-      "@types/yeoman-environment": "^2.3.3",
-      "@types/yeoman-generator": "^3.1.4",
-      "release-it": "^13.0.0",
-      "typescript": "^3.8.3",
-      "commitizen": "^4.2.3",
-      "cz-conventional-changelog": "^3.3.0"
-   },
-   "dependencies": {
-      "chalk": "^3.0.0",
-      "consola": "^2.11.3",
-      "fs-extra": "^8.1.0",
-      "inquirer": "^7.0.6",
-      "yeoman-environment": "^2.8.0",
-      "yeoman-generator": "^4.6.0"
-   },
-   "config": {
-      "commitizen": {
-         "path": "node_modules/cz-conventional-changelog"
-      }
-   }
+  "name": "shzl-cli",
+  "version": "0.1.5",
+  "description": " SHZL Cli",
+  "main": "lib/index.js",
+  "bin": {
+    "shzl-cli": "./lib/index.js"
+  },
+  "scripts": {
+    "run": "node ./lib/index.js",
+    "dev": "tsc --watch",
+    "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "author": "张鹏",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "generators"
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "^8.1.0",
+    "@types/yeoman-environment": "^2.3.3",
+    "@types/yeoman-generator": "^3.1.4",
+    "release-it": "^13.0.0",
+    "typescript": "^3.8.3",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "consola": "^2.11.3",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.0.6",
+    "yeoman-environment": "^2.8.0",
+    "yeoman-generator": "^4.6.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
 }

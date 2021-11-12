@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "demo-block": "../../components/button-demo/button-list"
+  },
+  "navigationBarTitleText": "首页"
+}

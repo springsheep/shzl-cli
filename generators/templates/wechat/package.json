@@ -1,0 +1,14 @@
+{
+  "name": "wechat-miniprogram",
+  "version": "1.0.0",
+  "description": "cci wechat miniprogram cli",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "liaojp",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.9.2"
+  }
+}
