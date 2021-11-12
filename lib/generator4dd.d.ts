@@ -1,5 +1,5 @@
 import Generator from 'yeoman-generator';
-export declare class Generator4MiniApp extends Generator {
+export declare class Generator4DD extends Generator {
     inputs: {
         name: string;
     };
